@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Заявка</title>
+    <link rel="stylesheet" href="tyle.css">
+</head>
+<body>
+<form action="" method="post">
+    <div class="data">
+    <p>Фамилия, Имя</p>
+    <input type="text">
+    <p>Отделение</p>
+    <input type="text">
+    <p>Кабинет</p>
+    <input type="text">
+    <p>Описание проблемы</p>
+    <input type="text">
+    <p><button id="send">Отправить</button></p>
+    </div>
+
+</form>
+<script src="https://telegram.org/js/telegram-web-app.js"></script>
+<script>
+    let tg = window.Telegram.WebApp;
+    let send = document.getElementById("send");
+
+    send.addEventListener("click", () => {
+        tg.close();
+    });
+
+</script>
+
+</body>
+</html>
